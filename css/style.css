@@ -79,6 +79,7 @@ header img {
 #menu_panel ul {
     padding-top: 50px;
     padding-right: 10px;
+    z-index: 10;
 }
 
 #menu_panel li {
