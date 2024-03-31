@@ -297,6 +297,10 @@ header img {
 
 /* レスポンシブ↓ */
 @media (max-width: 800px){
+    .wrapper {
+    margin: 0 0px;
+    }
+    
     /* TOP↓ */
     #top {
         flex-direction: column-reverse;
@@ -320,11 +324,31 @@ header img {
     #about_image{
         max-width: 300px;
     }
+    
+    #about_content {
+    margin-left: 0;
+    }
     /* ABOUT↑ */
     
     /* GALLERY↓ */
+    #gallery {
+    margin: 300px 0 0;
+    }
+    
     #gallery_content {
         flex-direction: column-reverse;
+    }
+    
+    .grid {
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    padding: 10px 0px;
+    }
+    
+    #big_item {
+    max-width: 450px;
+    padding: 10px 3px;
     }
     /* GALLERY↑ */
     
@@ -333,8 +357,13 @@ header img {
         margin: 200px 0 0;
     }
     
+    #contact::after {
+    width: 100%;
+    left: 0;
+    }
+    
     #contact iframe {
-        max-width: 380px;
+        max-width: 370px;
     }
     /* CONTACT↑ */
 }
