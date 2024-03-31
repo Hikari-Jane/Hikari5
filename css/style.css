@@ -311,7 +311,7 @@ header img {
     }
     
     #top_image {
-    max-width: 300px;
+        max-width: 200px;
         translate: 100px 0;
     }
     /* TOP↑ */
